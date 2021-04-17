@@ -25,7 +25,7 @@ async def on_member_join(member):
         embed = discord.Embed(
             title="Answer The Captcha",
             description=
-            f"```fix\nHi {member.name}\n{member.name} you wont be able to talk until you finish this\nPlease Type The Follwoing Captcha To Access The Server!!\n\nSteps:\n1)Type The letter Given In BElow Image down Here\n2)Done!!\n```"
+            f"```fix\nHi {member.name}\n{member.name} you wont be able to talk until you finish this\nPlease Type The Follwoing Captcha To Access The Server!!\n\nSteps:\n1)Type The letters Given In Below Image down Here\n2)Done!!\n```"
         )
         embed.set_image(url=res['img_url'])
         await member.send(embed=embed)
